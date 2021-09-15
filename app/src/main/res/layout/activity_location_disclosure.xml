@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="webtech.com.ogocabdriver.ui.splash.LocationDisclosureActivity"
+	android:padding="10dp"
+	>
+
+	<ScrollView
+		android:id="@+id/login_form"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		
+		>
+		
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		>
+		<androidx.appcompat.widget.LinearLayoutCompat
+			android:id="@+id/locationHeaderLayout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:orientation="vertical"
+			android:layout_margin="@dimen/dimen_10dp"
+			>
+			<com.google.android.material.imageview.ShapeableImageView
+				
+				android:layout_width="@dimen/dimen_50dp"
+				android:layout_height="@dimen/dimen_50dp"
+				android:adjustViewBounds="true"
+				android:scaleType="centerInside"
+				android:src="@drawable/ic_baseline_location_on"
+				
+				/>
+			<com.google.android.material.textview.MaterialTextView
+				android:id="@+id/tvLocationTitle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginTop="12dp"
+				android:text="@string/location_title"
+				android:textAlignment="center"
+				android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+				android:layout_centerHorizontal="true"
+				android:textStyle="bold"
+				android:padding="@dimen/dimen_5dp"
+
+				/>
+
+			<com.google.android.material.textview.MaterialTextView
+				android:id="@+id/tvLocationDisclosureDescription"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="12dp"
+				android:text="@string/location_disclosure_description"
+				
+				android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+
+				android:layout_centerHorizontal="true"
+				android:textAlignment="viewStart"
+				/>
+
+			
+			
+		</androidx.appcompat.widget.LinearLayoutCompat>
+
+		
+		
+		
+		
+	</RelativeLayout>
+	</ScrollView>
+
+	<androidx.appcompat.widget.LinearLayoutCompat
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_marginTop="@dimen/dimen_20dp"
+		android:weightSum="1"
+		android:layout_alignParentBottom="true"
+		android:layout_margin="@dimen/dimen_10dp"
+
+
+		>
+
+
+
+	<!--	<com.google.android.material.button.MaterialButton
+			android:id="@+id/tvNoThanks"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/dimen_60dp"
+			android:layout_gravity="center_horizontal"
+			android:baselineAligned="false"
+			android:text="@string/no_thanks"
+			android:textAllCaps="false"
+			android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+			android:layout_weight="0.5"
+			android:textStyle="bold"
+			android:layout_margin="@dimen/dimen_10dp"
+			/>-->
+
+		<com.google.android.material.textview.MaterialTextView
+			android:id="@+id/tvNoThanks"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/dimen_50dp"
+			android:gravity="center"
+			android:layout_gravity="center_horizontal|center_vertical"
+			android:text="@string/no_thanks"
+			android:textAlignment="gravity"
+			android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+			android:textColor="@color/black"
+			android:layout_weight="0.5"
+			android:background="@drawable/round_border"
+			android:layout_margin="@dimen/dimen_10dp"
+
+			/>
+		<com.google.android.material.button.MaterialButton
+			android:id="@+id/tvLocationTurnOn"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/dimen_60dp"
+			android:layout_gravity="center_horizontal|center_vertical"
+			android:baselineAligned="false"
+			android:text="@string/location_turn_on"
+			android:textAllCaps="true"
+			android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+			android:layout_weight="0.5"
+			android:textStyle="bold"
+			android:layout_margin="@dimen/dimen_10dp"
+			android:textColor="@color/white"
+			/>
+
+		<!--
+		<com.google.android.material.textview.MaterialTextView
+			android:id="@+id/tvLocationTurnOn"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/dimen_40dp"
+			android:gravity="center"
+			android:letterSpacing="0.1"
+			android:padding="@dimen/nav_header_vertical_spacing"
+			android:text="@string/location_turn_on"
+			android:textAlignment="gravity"
+			android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+			android:textColor="@color/black"
+			android:layout_weight="0.5"
+			android:background="@color/white"
+			android:layout_margin="@dimen/dimen_10dp"
+
+			/>-->
+
+
+
+
+	</androidx.appcompat.widget.LinearLayoutCompat>
+	
+	
+	
+	
+	
+
+</RelativeLayout>

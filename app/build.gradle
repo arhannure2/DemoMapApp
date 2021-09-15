@@ -1,0 +1,71 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'com.huawei.agconnect'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.huawei.demomapapp"
+        minSdkVersion 22
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.6.0'
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    // Add dependencies.
+    implementation 'com.huawei.agconnect:agconnect-core:1.5.2.300'
+
+    /// huawei map dependency
+    implementation 'com.huawei.hms:maps:6.0.0.301'
+
+    /// location dependency
+    implementation 'com.huawei.hms:location:6.0.0.302'
+
+    def okhttp3RetrofitVersion = '4.9.0'
+    implementation "com.squareup.okhttp3:okhttp:$okhttp3RetrofitVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttp3RetrofitVersion"
+
+    // retrofit
+    def retrofitVersion = '2.7.2'
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-moshi:$retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+
+}
+
+

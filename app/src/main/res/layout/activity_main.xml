@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+	
+
+	
+	
+	
+
+	<com.huawei.hms.maps.MapView
+		xmlns:map="http://schemas.android.com/apk/res-auto"
+		android:id="@+id/mapView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		map:cameraTargetLat="51"
+		map:cameraTargetLng="10"
+		map:cameraZoom="8.5"
+		map:mapType="normal"
+		map:uiCompass="true"
+		map:uiZoomControls="true" />
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:orientation="vertical" android:layout_height="wrap_content"
+		>
+		<com.google.android.material.textview.MaterialTextView
+			android:id="@+id/tvLatitude"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:text="@string/latitude"
+			android:textAlignment="center"
+			android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+			android:padding="@dimen/dimen_5dp"
+			
+			
+			/>
+		<com.google.android.material.textview.MaterialTextView
+			android:id="@+id/tvLongitude"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:text="@string/longitude"
+			android:textAlignment="center"
+			android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+			android:padding="@dimen/dimen_5dp"
+			/>
+		<com.google.android.material.textview.MaterialTextView
+			
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:text="@string/address_descreption"
+			android:textAlignment="center"
+			android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+			android:padding="@dimen/dimen_5dp"
+			/>
+		<com.google.android.material.textview.MaterialTextView
+			android:id="@+id/tvAddressDescription"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:textAlignment="center"
+			android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+			android:padding="@dimen/dimen_5dp"
+			/>
+	
+	</LinearLayout>
+</RelativeLayout>

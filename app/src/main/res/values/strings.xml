@@ -1,0 +1,26 @@
+<resources>
+	<string name="app_name">Demo Map App</string>
+	<string name="splash_title">Demo Map App</string>
+	<string name="splash_sub_title"> FOR HUAWEI </string>
+	
+	
+	
+	<!--LocationDisclosureActivity -->
+	
+	<string name="image_logo">image logo</string>
+	<!-- LocationDisclosureActivity -->
+	<string name="location_title">Use Your Location</string>
+	<string name="location_disclosure_description">This app collects location data  even when the app is closed or not in use.</string>
+	<string name="no_thanks">No Thanks</string>
+	<string name="location_turn_on">Turn On</string>
+	
+	<string name="cancel">Canceled</string>
+	
+	
+	<!-- MainActivity -->
+	
+	<string name="latitude">latitude</string>
+	<string name="longitude">longitude</string>
+	<string name="address_descreption">Address description</string>
+	
+</resources>
